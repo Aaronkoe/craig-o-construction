@@ -1,6 +1,6 @@
 /* Body background color */
 body {
-    background-color: #3a791f; /* Light gray background color */
+    background-color: lightgreen; /* Light green background color */
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
@@ -8,170 +8,100 @@ body {
     min-height: 100vh; /* Full viewport height */
 }
 
-header {
-    background-color: #c1ffa6; /* Light gray background color */
-    position: relative;
-    width: 100%;
-    height: 8em; /* Adjust the height to your desired banner size */
-    background-color: #333; /* Fallback background color */
+/* END OF BASE STYLES */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid brown;
 }
 
-/* Banner image styling */
-.banner {
-    width: 100%;
-    height: 8em;
-    object-fit: cover;
+.header-banner {
+    padding: 1em 0em;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-/* Logo styling */
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
-}
-
-.logo img {
-    height: 80px; /* Adjust the logo size as needed */
-}
-
-/* Title styling */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Navigation styling */
-.nav-link {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px;
-    display: block; /* Ensures the link fills the entire rectangle */
-    height: 100%; /* Fills the height of the nav bar */
-}
-
-.active {
-    font-weight: bold;
-    color: white; /* Changes the text color on active to be visible on the highlight */
-    background-color: blue; /* Background color for the highlighted rectangle */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.logo-banner {
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    background-color: #f1f1f1;
-    padding: 0;
-    height: 50px;
+    padding: 0em 1em;
+    align-items: center;
 }
 
-nav ul li {
-    flex: 1; /* Each list item takes up equal space */
-    text-align: center; /* Center the text within each flex item */
-    height: 100%; /* Ensure the list item takes the full height of the nav bar */
+.logo-banner > .quicklinks {
+    display: flex;
 }
 
-nav ul li .nav-link {
-    line-height: 50px; /* Vertically centers the text within the nav bar */
+.logo-banner > .quicklinks li {
+    display:inline-block;
+    border-right:2px solid;
+    padding:10px;
 }
 
-/* Main content area takes up all available space */
-main {
-    flex: 1;
-    background-color: #c1ffa6;
-    margin: 0px 40px;
+.logo-banner > .quicklinks li:last-child {
+    border-right:none;
 }
 
-.nav-and-title {
-    background-color: #c1ffa6;
-    margin: 0px 40px;
+.who-am-i {
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
 }
 
-/* Footer styling */
-footer {
-    background-color: rgb(83, 83, 83);
-    color: rgb(205, 205, 205);
-    padding: 10px 0;
-    text-align: center;
+.who-am-i > .my-face img {
+    width: 300px;
+    height: auto;
 }
 
-footer p {
-    font-size: 12px;
-    margin: 0;
+.who-am-i > .my-intro {
+    padding: 5em;
 }
 
-footer a {
-    color: blue;
-    text-decoration: none;
+.who-am-i > .my-intro p {
+    font-size: 2em;
 }
 
-
-/* Wrapper to add margins */
-.wrapper {
-    margin: 0 4em; /* Adjust this value to control the width of the margins */
+.offerings-section {
+    display: flex;
+    padding: 1em 0em;
+    background-color: lightblue;
+    justify-content: space-around;
 }
 
-.active {
-    font-weight: bold;
-    color: white;
-    background-color: blue;
+.offerings-section > .offerings-image img {
+    width: 300px;
+    height: auto;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.values-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values-section > .values-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me-section {
+    background-color: lightblue;
+}
+
+.footer {
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    background-color: #f1f1f1;
-    padding: 0;
-    height: 50px;
+    padding: 1em 2em;
 }
 
-nav ul li {
-    flex: 1;
-    text-align: center;
-    height: 100%;
-}
+.footer p {
+    color: lightgray;
 
-nav ul li .nav-link {
-    line-height: 50px;
-}
-
-/* Footer styling */
-footer {
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-footer p {
-    font-size: 12px;
-    margin: 0;
-}
-
-footer a {
-    color: blue;
-    text-decoration: none;
-}
-
-/* Media query to remove margin on mobile devices */
-@media (max-width: 768px) {
-    .wrapper {
-        margin: 0; /* Remove margins on mobile */
-    }
-
-    .nav-and-title {
-        margin: 0;
-    }
-    
-    main {
-        margin: 0;
-    }
 }
