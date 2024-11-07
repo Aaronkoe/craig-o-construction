@@ -1,8 +1,9 @@
 /* Body background color */
 body {
-    background-color: lightgreen; /* Light green background color */
+    background-color: teal; /* Light green background color */
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #264653;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Full viewport height */
@@ -13,12 +14,11 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid brown;
 }
 
 .header-banner {
     padding: 1em 0em;
-    background-color: yellow;
+    background-color: #E76F51;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,6 +44,17 @@ body {
 
 .logo-banner > .quicklinks li:last-child {
     border-right:none;
+}
+
+.quicklink-link {
+    color: #E76F51;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quicklink-link:hover {
+    color: #F2CC8F;
+    text-decoration: underline;
 }
 
 .who-am-i {
